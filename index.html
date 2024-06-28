@@ -6,7 +6,7 @@
     <title>receipe</title>
 </head>
 <style>
-    h1, a {
+    h1 {
         justify-content: center;
         align-items: center;
         display: flex;
@@ -14,23 +14,54 @@
     main {
         margin-top: 4em;
     }
+    main img{
+        width: 30%;
+        height: 20em;
+        border-radius: 22px;
+    }
+    .images{
+        margin-left: 9%;
+    }
     a {
         padding: 7px;
+        margin-left: 13.9em;
         text-decoration: none;
         font: 1em sans-serif;
         font-size: 18px;
         color: plum;
     }
+    .links {
+        display: flex;
+        flex-direction: row;
+    }
     a:hover {
         text-decoration: underline;
     }
+    @media screen and (max-width: 775px) {
+        a {
+        padding: 7px;
+        margin-left: 6.1em;
+        text-decoration: none;
+        font: 1em sans-serif;
+        font-size: 18px;
+        color: plum;
+    }
+}
 </style>
 <body>
     <h1><b>Testing recipes</b></h1>
     <main>
-    <a href="/ramen.html">Hot Ramen</a>
-    <a href="/omu-rice.html">Omlette-Rice</a>
-    <a href="/pasta.html">Pasta</a>
+        <div class="images">
+            <img src="/RecipeImage/ramensoup.jpg" alt="A bowl containing ramen soup">
+            <img src="/RecipeImage/omurice.jpg" alt="A bowl containing fried rice with chopsticks on the side of it">
+            <img src="/RecipeImage/Pasta.jpg" alt="A plate containing food named pasta with spoon on the side of it">
+        </div>
+
+        <div class="links">
+            <a href="/ramen.html">Hot Ramen</a>
+            <a href="/omu-rice.html">Omlette-Rice</a>
+            <a href="/pasta.html">Pasta</a>
+        </div>
     </main>
 </body>
 </html>
